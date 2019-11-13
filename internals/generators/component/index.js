@@ -72,7 +72,7 @@ module.exports = {
     if(data.wantLessFiles) {
       actions.push({
         type: 'add',
-        path: '../../app/containers/{{properCase name}}/index.less',
+        path: '../../app/components/{{properCase name}}/index.less',
         abortOnFail: true,
       });
     }
