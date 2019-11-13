@@ -17,6 +17,12 @@ import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 {{/if}}
 
+
+{{#if wantLessFiles}}
+import './index.less';
+{{/if}}
+
+
 function {{ properCase name }}() {
   return (
     <div>

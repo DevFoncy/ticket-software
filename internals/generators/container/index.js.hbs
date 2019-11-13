@@ -30,6 +30,12 @@ import { useInjectReducer } from 'utils/injectReducer';
 import makeSelect{{properCase name}} from './selectors';
 import reducer from './reducer';
 {{/if}}
+
+{{#if wantLessFiles}}
+import './index.less';
+{{/if}}
+
+
 {{#if wantSaga}}
 import saga from './saga';
 {{/if}}

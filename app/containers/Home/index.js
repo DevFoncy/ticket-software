@@ -16,6 +16,7 @@ import { useInjectReducer } from 'utils/injectReducer';
 import makeSelectHome from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import './index.less';
 
 export function Home() {
   useInjectReducer({ key: 'home', reducer });
@@ -27,7 +28,14 @@ export function Home() {
         <title>Home</title>
         <meta name="description" content="Description of Home" />
       </Helmet>
-      <h4> Este es el Home Page</h4>
+      <div className="Home">
+        <div className="Home-row1">
+          <p>loremdsadadsadsadsa</p>
+        </div>
+        <div className="Home-row2">
+          <p>loremdsadadsadsadsa 2</p>
+        </div>
+      </div>
     </div>
   );
 }
