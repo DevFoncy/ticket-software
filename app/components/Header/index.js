@@ -7,7 +7,6 @@ import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
 import Banner from './banner.jpg';
 import messages from './messages';
-
 function Header() {
   return (
     <div>
@@ -15,6 +14,7 @@ function Header() {
         <Img src={Banner} alt="react-boilerplate - Logo" />
       </A>
       <NavBar>
+        <HeaderLink to="/catalog">Catalog</HeaderLink>
         <HeaderLink to="/">
           <FormattedMessage {...messages.home} />
         </HeaderLink>

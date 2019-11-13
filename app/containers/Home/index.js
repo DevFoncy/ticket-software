@@ -27,6 +27,7 @@ export function Home() {
         <title>Home</title>
         <meta name="description" content="Description of Home" />
       </Helmet>
+      <h4> Este es el Home Page</h4>
     </div>
   );
 }
