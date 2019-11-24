@@ -4,6 +4,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
+process.noDeprecation = true;
 
 module.exports = options => ({
   mode: options.mode,
@@ -24,7 +25,14 @@ module.exports = options => ({
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: options.babelQuery,
+          options: {
+            plugins: [
+              [
+                'import',
+                { libraryName: 'antd', libraryDirectory: 'es', style: 'css' },
+              ], // `style: true` for less
+            ],
+          },
         },
       },
       {
@@ -120,8 +128,13 @@ module.exports = options => ({
     // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
     // inside your code for any environment checks; Terser will automatically
     // drop any unreachable code.
-    new webpack.EnvironmentPlugin({
-      NODE_ENV: 'development',
+    // new webpack.EnvironmentPlugin({
+    //   NODE_ENV: 'development',
+    // }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      },
     }),
   ]),
   resolve: {
