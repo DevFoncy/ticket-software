@@ -19,8 +19,12 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Login from 'containers/Login';
 import Dashboard from 'containers/Dashboard';
+import Ticket from 'containers/Ticket';
+import Service from 'containers/Service';
+import Account from 'containers/Account';
 
 import { message } from 'antd';
+import 'index.less';
 import GlobalStyle from '../../global-styles';
 window.message = message;
 
@@ -46,7 +50,11 @@ export default function App() {
         <Route exact path="/catalog" component={Home} />
         <Route path="/features" component={FeaturePage} />
         <Route path="/login" component={Login} />
-        <Route path="/dashboard" component={Dashboard} />
+        <Route exact path="/dashboard" component={Dashboard} />
+        <Route exact path="/dashboard/create/ticket" component={Ticket} />
+        <Route exact path="/dashboard/services" component={Service} />
+        <Route exact path="/dashboard/account" component={Account} />
+
         <Route path="" component={NotFoundPage} />
       </Switch>
       {/* <Footer/> */}

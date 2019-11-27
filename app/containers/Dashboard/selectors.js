@@ -21,6 +21,12 @@ export const makeSelectTickets = () =>
     state => state.get('tickets'),
   );
 
+export const makeSelectIsLoadingTickets = () =>
+  createSelector(
+    selectDashboardDomain,
+    state => state.get('loadingTickets'),
+  );
+
 const makeSelectDashboard = () =>
   createSelector(
     selectDashboardDomain,

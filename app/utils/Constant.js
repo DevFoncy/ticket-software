@@ -130,3 +130,20 @@ export const data = [
     address: 'London No. 2 Lake Park',
   },
 ];
+
+export const optionsPregunta = [
+  { label: 'Preguntas Comerciales', value: 'comerciales', name: 'comerciales' },
+  { label: 'Preguntas Tecnicas', value: 'tickets', name: 'tickets' },
+];
+
+export const optionsHerramienta = [
+  { label: ' Bitrix24 Self Hosted', value: 'hosted' },
+  { label: ' Bitrix24 On Cloud', value: 'cloud' },
+];
+
+export const optionsProblema = [
+  { label: ' No puede iniciar sesion', value: 'problema1' },
+  { label: ' Informar de un error ', value: 'problema2' },
+  { label: ' Como funciona ', value: 'problema3' },
+  { label: ' Solicitar caracteristica', value: 'problema4' },
+];
