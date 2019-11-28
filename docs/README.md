@@ -1,10 +1,10 @@
 Install backend project:
 
 .Requirements: 
-   .Laravel v >5.6
-   .PHP v >7.2
-   .MYSQL
-   .composer 
+   1)Laravel v >5.6
+   2)PHP v >7.2
+   3)MYSQL
+   4)composer 
    
  Steps: 
    1) git clone URL name
