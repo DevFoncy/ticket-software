@@ -1,4 +1,6 @@
-Install project , requirements : 
+Install backend project:
+
+.Requirements: 
    .Laravel v >5.6
    .PHP v >7.2
    .MYSQL
