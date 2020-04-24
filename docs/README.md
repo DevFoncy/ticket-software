@@ -1,6 +1,8 @@
 ## Ticket Software ( Frontend )
 
-This project is a user ticket manager when you can create , attend , finish tickets 
+This project is a user ticket manager when you can create , attend , finish tickets , the objective this projec is to automate HelpDesk service in the company Asesores -e - the documentation , use case this [link](https://docs.google.com/document/d/1af-3kWLX8I5B785tyP7Qg7-3EgYjlc8L/edit)
+
+The documenta
 
 ## Built With
 
@@ -9,7 +11,7 @@ This project is a user ticket manager when you can create , attend , finish tick
 * [Ant Design](https://ant.design/) - Style Guide
 
 ### Requirements:
- 
+
     1. Install node.js ( last version ) 
     2. Enable the api backend launched in Laravel in port 8000 ( link: https://github.com/DevFoncy/ticket-software-backend.git )
     
@@ -18,11 +20,12 @@ This project is a user ticket manager when you can create , attend , finish tick
     1. run git clone https://github.com/DevFoncy/ticket-software.git
     2. run npm install
     3. run npm run start
-    4. It's all! go to localhost:3000/login 
+    4. Go to localhost:3000/login  ( username: steve.admin@gmail.com   password : secret )
 
-### username: steve.admin@gmail.com   password : secret
+``` 
+ 
+```
 
-##### Important ! : after run the project you have to run backend-ticket-software : 
 
 
 
